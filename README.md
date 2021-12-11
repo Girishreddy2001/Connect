@@ -14,3 +14,18 @@ on their skills. The system provides the platform for
 students to gain momentum with respect to their
 career.
 
+# Algorithmic Strategy used
+   ![](images/algo-1.png)
+   ![](images/algo-2.png)
+
+
+
+# Flow of the website
+ ![](images/flowchart.png)
+
+ Modules in the project
+ ![](images/modules.png)
+ 
+ Friend recommendation dashboard
+ ![](images/dashboard.png)
+
