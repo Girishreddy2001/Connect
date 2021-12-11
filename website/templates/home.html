@@ -1,0 +1,72 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+  %}
+  
+  <div class="container my-3">
+    <h2>Current friends</h2>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">SNo</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Skills</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+          {% for i in friends %}
+          <tr>
+            <th scope="row">{{loop.index}}</th>
+            <td>{{i.first_name}}</td>
+            <td>{{i.skill}}</td>
+            <td>
+              <a href="/remove/{{i.id}}" name="remove_friend" type="button" class="btn btn-outline-dark btn-sm mx-1" >-Remove</button>
+            
+            </td>
+          </tr>
+          
+          {% endfor %}
+        </tbody>
+        </table>
+    
+</div>  
+
+<div class="container my-3">
+  <h2>Suggested friends</h2>
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">SNo</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Skills</th>
+                      <th scope="col">Match%</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+        {% for i in friends_2 %}
+        <tr>
+          <th scope="row">{{loop.index}}</th>
+          <td>{{i[1]}}</td>
+          <td>{{i[2]}}</td>
+          <td>{{i[3]*100}}</td> 
+             
+          <td>
+            <a href="/add/{{i[0]}}" name="add_friend" type="button" class="btn btn-outline-dark btn-sm mx-1" >+Add Friend</button>
+          
+          </td>
+        </tr>
+        
+        {% endfor %}
+      </tbody>
+      </table>
+  
+</div>  
+
+
+  <!-- <form method="POST" action="#">
+    <label for="user_id">user_id</label>
+    <input type="number" name="user_id" id="user_id" >
+    <label for="friend">friend</label>
+    <input type="number" name="friend" id="friend" >
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form> -->
+  {% endblock %}
