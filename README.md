@@ -15,17 +15,17 @@ students to gain momentum with respect to their
 career.
 
 # Algorithmic Strategy used
-   ![](images/algo-1.png)
-   ![](images/algo-2.png)
+   ![](images/algo-1.PNG)
+   ![](images/algo-2.PNG)
 
 
 
 # Flow of the website
- ![](images/flowchart.png)
+ ![](images/flowchart.PNG)
 
- Modules in the project
- ![](images/modules.png)
+# Modules in the project
+ ![](images/modules.PNG)
  
- Friend recommendation dashboard
- ![](images/dashboard.png)
+# Friend recommendation dashboard
+ ![](images/dashboard.PNG)
 
